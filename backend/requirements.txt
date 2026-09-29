@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+pydantic-settings
+python-multipart
+python-jose[cryptography]
+passlib[bcrypt]
+sqlite3; python_version < '3'
+# For AI/RAG fallback
+scikit-learn
+numpy
+PyMuPDF
+python-dotenv

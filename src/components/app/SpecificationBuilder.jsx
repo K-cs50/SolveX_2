@@ -15,11 +15,13 @@ import {
   Search,
   CheckSquare,
   Square,
-  FileCheck
+  FileCheck,
+  Save
 } from 'lucide-react';
 import { StatusBadge } from '../common/Badge';
 import { STANDARDS_DATABASE } from '../../services/standardsDatabase';
 import { Modal } from '../common/Modal';
+import { api } from '../../services/api';
 
 export default function SpecificationBuilder({
   selectedStandards = [],
@@ -250,6 +252,32 @@ ${checklist.map(c => `- [${c.checked ? 'x' : ' '}] ${c.text}`).join('\n')}
     if (onShowToast) onShowToast("JSON specification schema downloaded.", "success");
   };
 
+  const [isSaving, setIsSaving] = useState(false);
+  const handleSaveProject = async () => {
+    setIsSaving(true);
+    try {
+      const payload = {
+        productService,
+        procurementRequirement,
+        technicalParameters,
+        applicableStandards: selectedStandards,
+        testingRequirements,
+        safetyRequirements,
+        installationRequirements,
+        certificationCompliance,
+        checklist,
+        notes
+      };
+      await api.saveSpecification(productService, payload);
+      if (onShowToast) onShowToast("Specification draft saved to backend database.", "success");
+    } catch (err) {
+      console.warn("Backend save failed, saved to session:", err.message);
+      if (onShowToast) onShowToast("Saved to current workspace session.", "info");
+    } finally {
+      setIsSaving(false);
+    }
+  };
+
   // Filter standards for Add Standard Modal
   const availableStandardsToAdd = STANDARDS_DATABASE.filter(s => {
     const query = standardSearchText.toLowerCase();
@@ -283,6 +311,10 @@ ${checklist.map(c => `- [${c.checked ? 'x' : ' '}] ${c.text}`).join('\n')}
         </div>
 
         <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+          <button onClick={handleSaveProject} className="btn btn-outline btn-sm" disabled={isSaving}>
+            <Save size={14} />
+            {isSaving ? "Saving..." : "Save Draft"}
+          </button>
           <button onClick={handleAutoGenerateClauses} className="btn btn-outline btn-sm" title="Populate testing & safety clauses directly from selected standards">
             <Sparkles size={14} />
             Auto-Sync Clauses

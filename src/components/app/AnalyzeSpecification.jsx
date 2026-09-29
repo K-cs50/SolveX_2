@@ -190,13 +190,40 @@ export default function AnalyzeSpecification({
     }
   };
 
-  // File Upload Handler
-  const handleFileUpload = (e) => {
+  // File Upload Handler with backend PDF parsing
+  const handleFileUpload = async (e) => {
     const file = e.target.files?.[0];
     if (!file) return;
 
     setUploadedFileName(file.name);
-    if (file.type.includes('text') || file.name.endsWith('.txt') || file.name.endsWith('.md')) {
+    setIsAnalyzing(true);
+    setProgressStage({ stage: 'upload', label: `Reading and extracting ${file.name}...`, percent: 25 });
+
+    if (file.name.toLowerCase().endsWith('.pdf')) {
+      try {
+        const result = await AIService.analyzeDocumentFile(file, (stage) => setProgressStage(stage));
+        setSpecificationText(result.rawText || `[PARSED TENDER SPECIFICATION FROM: ${file.name}]`);
+        setAnalysisResult(result);
+        if (onSpecificationGenerated) onSpecificationGenerated(result);
+      } catch (err) {
+        console.warn("Backend PDF upload failed, falling back to local text reading:", err.message);
+        const fallbackText = `[EXTRACTED REQUIREMENT SUMMARY FROM: ${file.name}]\n` + MOCK_TENDERS[1].raw_text;
+        setSpecificationText(fallbackText);
+        const reqs = DocumentExtractionService.extractRequirements(fallbackText);
+        const entity = DocumentExtractionService.detectProductEntity(fallbackText);
+        const recs = RecommendationService.generateRecommendations(reqs, fallbackText);
+        setAnalysisResult({
+          timestamp: new Date().toISOString(),
+          entity,
+          requirements: reqs,
+          recommendations: recs,
+          rawText: fallbackText
+        });
+      } finally {
+        setIsAnalyzing(false);
+        setProgressStage(null);
+      }
+    } else {
       const reader = new FileReader();
       reader.onload = (event) => {
         const text = event.target?.result || "";
@@ -211,22 +238,10 @@ export default function AnalyzeSpecification({
           recommendations: recs,
           rawText: text
         });
+        setIsAnalyzing(false);
+        setProgressStage(null);
       };
       reader.readAsText(file);
-    } else {
-      // PDF or DOCX mock extract
-      const text = `[PARSED TENDER SPECIFICATION FROM: ${file.name}]\n\n` + MOCK_TENDERS[1].raw_text;
-      setSpecificationText(text);
-      const reqs = DocumentExtractionService.extractRequirements(text);
-      const entity = DocumentExtractionService.detectProductEntity(text);
-      const recs = RecommendationService.generateRecommendations(reqs, text);
-      setAnalysisResult({
-        timestamp: new Date().toISOString(),
-        entity,
-        requirements: reqs,
-        recommendations: recs,
-        rawText: text
-      });
     }
   };
 

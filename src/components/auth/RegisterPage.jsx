@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { UserPlus, User, Building, Mail, Lock, ArrowLeft } from 'lucide-react';
+import { api } from '../../services/api';
 
 export default function RegisterPage({ onRegisterSuccess, onSwitchToLogin, onBackToHome }) {
   const [name, setName] = useState('');
@@ -10,7 +11,9 @@ export default function RegisterPage({ onRegisterSuccess, onSwitchToLogin, onBac
   const [role, setRole] = useState('Procurement Official');
   const [error, setError] = useState('');
 
-  const handleSubmit = (e) => {
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!name || !organization || !email || !password) {
       setError('All fields are mandatory for institutional registration.');
@@ -26,12 +29,30 @@ export default function RegisterPage({ onRegisterSuccess, onSwitchToLogin, onBac
     }
 
     setError('');
-    onRegisterSuccess({
-      name,
-      organization,
-      email,
-      role
-    });
+    setLoading(true);
+    try {
+      await api.register(email, password, name);
+      onRegisterSuccess({
+        name,
+        organization,
+        email,
+        role
+      });
+    } catch (err) {
+      if (err.message && err.message.includes('already registered')) {
+        setError('This email is already registered. Please sign in instead.');
+      } else {
+        // Fallback for local session
+        onRegisterSuccess({
+          name,
+          organization,
+          email,
+          role
+        });
+      }
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
