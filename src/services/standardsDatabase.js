@@ -1,0 +1,1298 @@
+/**
+ * SolveX — Indian Standards Knowledge Base
+ * Structured standard records complying with Section 29 Knowledge Model.
+ * Clearly designated as Curated Standards Intelligence (Demonstration Data).
+ */
+
+export const STANDARDS_DATABASE = [
+  // --------------------------------------------------------------------------
+  // 1. CIVIL ENGINEERING & WATER INFRASTRUCTURE (CED)
+  // --------------------------------------------------------------------------
+  {
+    standard_id: "IS-4984-2016",
+    standard_number: "IS 4984 : 2016",
+    title: "High Density Polyethylene Pipes for Water Supply — Specification (Fifth Revision)",
+    scope: "Covers requirements for high density polyethylene (HDPE) pipes from 16 mm to 1000 mm nominal diameter for supply of potable water, domestic plumbing, conveyance of raw water, and irrigation distribution systems under pressure.",
+    status: "Current",
+    publication_date: "2016-08-15",
+    current_version: "Fifth Revision (incorporating Amendments No. 1 & 2)",
+    division: "CED (Civil Engineering Division)",
+    committee: "CED 50 — Plastic Piping Systems",
+    amendments: [
+      { number: "Amendment No. 1", date: "2018-04", summary: "Revision of oxidation induction time (OIT) test parameters and carbon black dispersion limits." },
+      { number: "Amendment No. 2", date: "2021-09", summary: "Inclusion of PE 100-RC (resistant to crack) designation and hydrostatic test tolerances." }
+    ],
+    supersedes: "IS 4984 : 1995",
+    superseded_by: null,
+    product_categories: ["Pipes & Fittings", "Water Supply Infrastructure", "Plastics & Polymers"],
+    technical_domains: ["Civil Engineering", "Public Health Engineering", "Chemical Materials"],
+    keywords: ["HDPE", "potable water", "PE 100", "PE 80", "PN rating", "pipe", "hydrostatic pressure", "Jal Jeevan Mission", "water mains", "butt fusion"],
+    applicable_products: [
+      "High Density Polyethylene (HDPE) Pipes",
+      "PE 100 Pressure Pipes",
+      "PE 80 Distribution Conduits",
+      "Drinking Water Distribution Pipelines"
+    ],
+    test_methods: [
+      { clause: "Clause 8.1", title: "Hydrostatic Pressure Test (Internal)", description: "Pipe must withstand induced circumferential stress of 12.4 MPa at 20°C for 100 hours without failure or burst." },
+      { clause: "Clause 8.3", title: "Melt Flow Rate (MFR) Test", description: "Tested in accordance with IS 2530 at 190°C with 5.0 kg nominal load; value shall be 0.2 to 1.4 g/10 min." },
+      { clause: "Clause 8.4", title: "Carbon Black Content and Dispersion", description: "Between 2.0% and 2.5% by mass uniformly distributed per Annexure B." },
+      { clause: "Clause 8.5", title: "Oxidation Induction Time (OIT)", description: "Minimum 20 minutes at 200°C per ISO 11357-6." }
+    ],
+    safety_information: {
+      clause: "Clause 5.3",
+      title: "Potability & Toxicological Suitability",
+      description: "Pipes for drinking water must not impart any taste, odour, or toxic constituents exceeding limits prescribed in IS 10500."
+    },
+    installation_information: {
+      clause: "Annexure C",
+      title: "Handling, Trench Laying & Butt Fusion Guidelines",
+      reference: "Refer to IS 7634 (Part 2) for detailed trench preparation, jointing, and backfilling."
+    },
+    terminology_information: "Definitions of PE 80, PE 100, MRS (Minimum Required Strength 10.0 MPa), and SDR (Standard Dimension Ratio) per Clause 3.",
+    normative_references: [
+      { standard_number: "IS 2530 : 1963", title: "Methods of test for polyethylene molding materials and polyethylene compounds", relationship_type: "Test Method" },
+      { standard_number: "IS 10500 : 2012", title: "Drinking Water — Specification (Second Revision)", relationship_type: "Safety & Quality Baseline" },
+      { standard_number: "IS 7634 (Part 2) : 2012", title: "Laying and jointing of polyethylene (PE) pipes — Code of practice", relationship_type: "Installation Standard" }
+    ],
+    allied_standards: [
+      { standard_number: "IS 5382 : 2018", title: "Rubber sealing rings for gas mains, water mains and sewers", relationship_type: "Component Fitment" },
+      { standard_number: "IS 8360 (Part 1) : 1977", title: "Fabricated high density polyethylene (HDPE) fittings for potable water supplies", relationship_type: "Fittings Standard" }
+    ],
+    related_standards: [
+      { standard_number: "IS 14846 : 2000", title: "Sluice valves for water works purposes (50 to 1200 mm size)", relationship_type: "System Component" }
+    ],
+    certification_information: {
+      scheme: "BIS Product Certification Scheme (Scheme-I, ISI Mark)",
+      mandatory_status: "Mandatory under Quality Control Order (QCO)",
+      source_order: "DPIIT Quality Control Order (Pipes and Tubes)",
+      verification_note: "Verify current QCO notification date against BIS Gazette Portal before finalizing tender clause."
+    },
+    source_document: "Bureau of Indian Standards — Civil Engineering Division (CED 50)",
+    source_location: "CED 50 / IS 4984:2016 Specification Document"
+  },
+  {
+    standard_id: "IS-10500-2012",
+    standard_number: "IS 10500 : 2012",
+    title: "Drinking Water — Specification (Second Revision, Reaffirmed 2018)",
+    scope: "Prescribes the essential quality requirements and permissible limits for drinking water intended for human consumption, including physical, chemical, toxic, and bacteriological parameters.",
+    status: "Current",
+    publication_date: "2012-05-20",
+    current_version: "Second Revision (Reaffirmed 2018, with Amendments 1, 2 & 3)",
+    division: "CHD (Chemical Division)",
+    committee: "CHD 13 — Water Quality Sectional Committee",
+    amendments: [
+      { number: "Amendment No. 1", date: "2015-06", summary: "Revision of heavy metal limits (Lead max 0.01 mg/l, Arsenic max 0.01 mg/l)." },
+      { number: "Amendment No. 2", date: "2018-09", summary: "Permissible limits for pesticide residues and polyaromatic hydrocarbons." }
+    ],
+    supersedes: "IS 10500 : 1991",
+    superseded_by: null,
+    product_categories: ["Water Quality", "Environmental Safety", "Public Health"],
+    technical_domains: ["Public Health Engineering", "Chemical Analysis", "Water Treatment"],
+    keywords: ["drinking water", "potability", "TDS", "pH", "turbidity", "chlorine", "heavy metals", "coliform", "water mission", "JJM"],
+    applicable_products: [
+      "Potable Water Treatment Plants",
+      "Rural Piped Drinking Water Supply",
+      "Packaged Drinking Water",
+      "Municipal Water Distribution"
+    ],
+    test_methods: [
+      { clause: "Table 1 (Sl. 1)", title: "Turbidity Test", description: "Acceptable limit 1 NTU, maximum permissible limit 5 NTU tested per IS 3025 (Part 10)." },
+      { clause: "Table 1 (Sl. 2)", title: "Total Dissolved Solids (TDS)", description: "Acceptable limit 500 mg/l, permissible limit 2000 mg/l tested per IS 3025 (Part 16)." },
+      { clause: "Table 2 (Sl. 1)", title: "Bacteriological Quality (E. coli)", description: "Shall not be detectable in any 100 ml sample tested per IS 15185 / IS 1622." }
+    ],
+    safety_information: {
+      clause: "Table 2 & 3",
+      title: "Toxic Substances and Heavy Metals Thresholds",
+      description: "Strict ceilings on toxic substances: Lead (0.01 mg/l), Cadmium (0.003 mg/l), Chromium (0.05 mg/l)."
+    },
+    installation_information: {
+      clause: "Clause 4",
+      title: "Sampling and Frequency of Quality Monitoring",
+      reference: "Sampling procedure per IS 3025 (Part 1) and test reports from NABL accredited water testing labs."
+    },
+    terminology_information: "Acceptable limit and permissible limit in the absence of alternate source defined in Clause 3.",
+    normative_references: [
+      { standard_number: "IS 3025 (Part 1 to 50)", title: "Methods of sampling and test (physical and chemical) for water and wastewater", relationship_type: "Test Code Base" },
+      { standard_number: "IS 1622 : 1981", title: "Methods of sampling and microbiological examination of water", relationship_type: "Microbiological Test" }
+    ],
+    allied_standards: [
+      { standard_number: "IS 4984 : 2016", title: "High density polyethylene pipes for water supply", relationship_type: "Conveyance Standard" },
+      { standard_number: "IS 14846 : 2000", title: "Sluice valves for water works purposes", relationship_type: "Isolation Component" }
+    ],
+    related_standards: [
+      { standard_number: "IS 14543 : 2004", title: "Packaged drinking water (other than packaged natural mineral water)", relationship_type: "Bottled Variant" }
+    ],
+    certification_information: {
+      scheme: "Statutory Potable Baseline across State Public Health Missions",
+      mandatory_status: "Mandatory baseline criteria for Jal Jeevan Mission and municipal supplies",
+      source_order: "Ministry of Jal Shakti Guidelines",
+      verification_note: "Water samples from commissioning test runs must possess NABL lab compliance certification."
+    },
+    source_document: "Bureau of Indian Standards — Chemical Division (CHD 13)",
+    source_location: "CHD 13 / IS 10500:2012 Specification Document"
+  },
+  {
+    standard_id: "IS-7634-PART2-2012",
+    standard_number: "IS 7634 (Part 2) : 2012",
+    title: "Laying and Jointing of Polyethylene (PE) Pipes — Code of Practice: Part 2 Preformed Butt-Welded and Polyethylene Fusion",
+    scope: "Covers the code of practice for laying, butt fusion jointing, electrofusion, trenching, backfilling, and field pressure testing of high density polyethylene (HDPE) pipes in water supply networks.",
+    status: "Current",
+    publication_date: "2012-11-15",
+    current_version: "Second Revision (Reaffirmed 2019)",
+    division: "CED (Civil Engineering Division)",
+    committee: "CED 50 — Plastic Piping Systems",
+    amendments: [],
+    supersedes: "IS 7634 (Part 2) : 1975",
+    superseded_by: null,
+    product_categories: ["Installation Codes", "Pipes & Fittings", "Workmanship"],
+    technical_domains: ["Civil Engineering", "Plumbing", "Public Works Construction"],
+    keywords: ["butt fusion", "jointing", "trenching", "electrofusion", "field testing", "HDPE laying", "welding temperature", "pipe bedding"],
+    applicable_products: [
+      "HDPE Pipeline Construction",
+      "Butt Fusion Welding Equipment",
+      "Trench Bedding Material",
+      "Hydrostatic Field Test Setup"
+    ],
+    test_methods: [
+      { clause: "Clause 7.2", title: "Field Hydrostatic Pressure Test", description: "Test section pressurized to 1.5 times working pressure, held for 2 hours with permissible drop < 0.2 bar." },
+      { clause: "Clause 6.3", title: "Weld Bead Visual and Destructive Inspection", description: "Bead width, rollback uniformity, and bend test on weld test-coupons." }
+    ],
+    safety_information: {
+      clause: "Clause 5.1",
+      title: "Trench Safety, Barricading and Minimum Cover",
+      description: "Minimum cover of 1.0 m under vehicular roadways and 0.8 m under pedestrian walkways with cushion sand bedding."
+    },
+    installation_information: {
+      clause: "Clause 6.1",
+      title: "Butt Fusion Welding Parameters",
+      reference: "Heating plate temperature 200°C to 220°C, drag pressure compensation, and controlled cooling under pressure."
+    },
+    terminology_information: "Bead size, soaking time, interfacial pressure, and SDR joint geometry defined in Clause 3.",
+    normative_references: [
+      { standard_number: "IS 4984 : 2016", title: "High density polyethylene pipes for water supply", relationship_type: "Parent Product Code" }
+    ],
+    allied_standards: [
+      { standard_number: "IS 5382 : 2018", title: "Rubber sealing rings for gas mains, water mains and sewers", relationship_type: "Gasket Standard" }
+    ],
+    related_standards: [
+      { standard_number: "IS 1239 (Part 1) : 2004", title: "Steel tubes and fittings", relationship_type: "Piping Alternative" }
+    ],
+    certification_information: {
+      scheme: "Workmanship & Construction Code of Practice",
+      mandatory_status: "Mandatory in CPWD and PHED civil works contracts",
+      source_order: "CPWD Civil Works Guidelines 2021",
+      verification_note: "Fusion welding machine calibration certificate must be submitted prior to jointing."
+    },
+    source_document: "Bureau of Indian Standards — Civil Engineering Division (CED 50)",
+    source_location: "CED 50 / IS 7634 (Part 2) Code of Practice Document"
+  },
+  {
+    standard_id: "IS-14846-2000",
+    standard_number: "IS 14846 : 2000",
+    title: "Sluice Valves for Water Works Purposes (50 to 1200 mm Size) — Specification (First Revision)",
+    scope: "Covers requirements for non-rising and rising stem sluice valves for water works, with nominal sizes from 50 mm up to 1200 mm, for nominal pressures PN 0.6, PN 1.0, and PN 1.6 MPa.",
+    status: "Current",
+    publication_date: "2000-03-20",
+    current_version: "First Revision (incorporating Amendments No. 1, 2, 3 & 4)",
+    division: "MED (Mechanical Engineering Division)",
+    committee: "MED 03 — Valves and Fluid Control",
+    amendments: [
+      { number: "Amendment No. 3", date: "2016-05", summary: "Inclusion of ductile iron (SG iron) as alternative material for body, wedge, and bonnet." },
+      { number: "Amendment No. 4", date: "2020-01", summary: "Torque requirements for electric actuator operation and coating guidelines per IS 10500." }
+    ],
+    supersedes: "IS 780 : 1984 and IS 2906 : 1984",
+    superseded_by: null,
+    product_categories: ["Pipes & Fittings", "Valves & Flow Control", "Water Supply Infrastructure"],
+    technical_domains: ["Mechanical Engineering", "Civil Engineering", "Fluid Mechanics"],
+    keywords: ["sluice valve", "gate valve", "PN 1.0", "PN 1.6", "water supply", "cast iron", "ductile iron", "flanged end", "non-rising spindle"],
+    applicable_products: [
+      "Flanged Sluice Valves (50mm to 1200mm)",
+      "Cast Iron Gate Valves for Raw and Treated Water",
+      "Ductile Iron Sluice Valves for Pumping Mains",
+      "Isolating Valves for Municipal Distribution"
+    ],
+    test_methods: [
+      { clause: "Clause 11.1", title: "Hydrostatic Body (Shell) Test", description: "Body subjected to 1.5 times nominal pressure (e.g. 1.5 MPa for PN 1.0, 2.4 MPa for PN 1.6) held for 5 minutes without leakage." },
+      { clause: "Clause 11.2", title: "Seat Leakage Test", description: "Subjected to 1.1 times nominal pressure with zero visual droplet leakage across seat rings." },
+      { clause: "Clause 11.3", title: "Operational Torque Test", description: "Verification of maximum opening and closing torque within manual effort limits of 250 N." }
+    ],
+    safety_information: {
+      clause: "Clause 6.3",
+      title: "Stem Retaining and Blowout Prevention",
+      description: "Stem design must ensure mechanical retention under pressurized full open state to prevent spindle blowout."
+    },
+    installation_information: {
+      clause: "Clause 12",
+      title: "Valve Chamber and Flange Gaskets",
+      reference: "Installed with rubber gaskets conforming to IS 5382 and flange drilling per IS 1538."
+    },
+    terminology_information: "Definitions of face-to-face dimensions, PN rating, and wedge guide mechanisms per Clause 3.",
+    normative_references: [
+      { standard_number: "IS 1538 : 1993", title: "Cast iron fittings for pressure pipes for water, gas and sewage", relationship_type: "Flange Dimension Matching" },
+      { standard_number: "IS 210 : 2009", title: "Grey iron castings — Specification", relationship_type: "Material Baseline" },
+      { standard_number: "IS 5382 : 2018", title: "Rubber sealing rings for gas mains, water mains and sewers", relationship_type: "Gasket Standard" }
+    ],
+    allied_standards: [
+      { standard_number: "IS 4984 : 2016", title: "High density polyethylene pipes for water supply", relationship_type: "Connecting Pipeline" },
+      { standard_number: "IS 13095 : 1991", title: "Butterfly valves for general purposes", relationship_type: "Alternative Flow Control" }
+    ],
+    related_standards: [
+      { standard_number: "IS 779 : 1994", title: "Water meters (domestic type) — Specification", relationship_type: "Metering Component" }
+    ],
+    certification_information: {
+      scheme: "BIS Product Certification Scheme (Scheme-I, ISI Mark)",
+      mandatory_status: "Mandatory in municipal water procurement contracts",
+      source_order: "Central Public Health & Environmental Engineering Organisation (CPHEEO) Manual",
+      verification_note: "Verify hydrostatic test certificates stamped by third-party inspection agency."
+    },
+    source_document: "Bureau of Indian Standards — Mechanical Engineering Division (MED 03)",
+    source_location: "MED 03 / IS 14846:2000 Specification Document"
+  },
+  {
+    standard_id: "IS-5382-2018",
+    standard_number: "IS 5382 : 2018",
+    title: "Rubber Sealing Rings for Gas Mains, Water Mains and Sewers — Specification (Third Revision)",
+    scope: "Specifies requirements for elastomeric vulcanized rubber sealing rings and gaskets used in pipeline joints for cold potable water supply, drainage, sewers, and gas mains.",
+    status: "Current",
+    publication_date: "2018-09-12",
+    current_version: "Third Revision",
+    division: "PCD (Petroleum, Coal and Related Products Division)",
+    committee: "PCD 13 — Rubber and Rubber Products",
+    amendments: [],
+    supersedes: "IS 5382 : 1985",
+    superseded_by: null,
+    product_categories: ["Pipes & Fittings", "Gaskets & Seals", "Rubber Products"],
+    technical_domains: ["Materials Technology", "Public Health Engineering", "Polymer Chemistry"],
+    keywords: ["rubber gasket", "EPDM", "sealing ring", "hardness", "compression set", "tensile strength", "water mains", "flange gasket"],
+    applicable_products: [
+      "EPDM Flange Gaskets for Valves",
+      "Tyton Push-fit Rubber Rings for DI Pipes",
+      "Elastomeric Pipe Joint Seals",
+      "Sewage and Water Mains Sealing Rings"
+    ],
+    test_methods: [
+      { clause: "Clause 7.1", title: "Tensile Strength and Elongation at Break", description: "Tested per IS 3400 (Part 1); tensile strength minimum 9.0 MPa, elongation >= 300%." },
+      { clause: "Clause 7.3", title: "Compression Set Test at 70°C", description: "Conducted per IS 3400 (Part 10) for 24 hours; compression set shall not exceed 20%." }
+    ],
+    safety_information: {
+      clause: "Clause 5.2",
+      title: "Biological and Microbiological Suitability",
+      description: "Rubber rings in contact with drinking water must not support microbial growth or release toxic Plasticizers."
+    },
+    installation_information: {
+      clause: "Clause 8.1",
+      title: "Storage and Lubricant Compatibility",
+      reference: "Store in cool dry conditions away from UV light; use only water-soluble non-petroleum lubricants."
+    },
+    terminology_information: "Hardness classes (40 to 80 IRHD) defined in Table 1.",
+    normative_references: [
+      { standard_number: "IS 3400 (Parts 1-10)", title: "Methods of test for vulcanized rubber", relationship_type: "Test Method Code" }
+    ],
+    allied_standards: [
+      { standard_number: "IS 4984 : 2016", title: "High density polyethylene pipes", relationship_type: "Joint Component" },
+      { standard_number: "IS 14846 : 2000", title: "Sluice valves for water works", relationship_type: "Flange Seal" }
+    ],
+    related_standards: [],
+    certification_information: {
+      scheme: "BIS Product Certification Scheme (Scheme-I, ISI Mark)",
+      mandatory_status: "Mandatory under Rubber and Rubber Products QCO",
+      source_order: "DPIIT Quality Control Order",
+      verification_note: "Check manufacturer batch test sheet for compression set."
+    },
+    source_document: "Bureau of Indian Standards — Petroleum and Coal Division (PCD 13)",
+    source_location: "PCD 13 / IS 5382:2018 Specification Document"
+  },
+
+  // --------------------------------------------------------------------------
+  // 2. METALLURGICAL & STRUCTURAL ENGINEERING (MTD)
+  // --------------------------------------------------------------------------
+  {
+    standard_id: "IS-1786-2008",
+    standard_number: "IS 1786 : 2008",
+    title: "High Strength Deformed Steel Bars and Wires for Concrete Reinforcement — Specification (Fourth Revision, Reaffirmed 2018)",
+    scope: "Covers requirements of deformed steel bars and wires for use as reinforcement in concrete in the strength grades Fe 415, Fe 415D, Fe 500, Fe 500D, Fe 550, Fe 550D, and Fe 600.",
+    status: "Current",
+    publication_date: "2008-04-10",
+    current_version: "Fourth Revision (Reaffirmed 2018, with Amendment No. 1, 2 & 3)",
+    division: "MTD (Metallurgical Engineering Division)",
+    committee: "MTD 28 — Steel Reinforcement Sectional Committee",
+    amendments: [
+      { number: "Amendment No. 1", date: "2012-07", summary: "Tightening of sulfur and phosphorus chemical limits for seismic grade 'D' bars." },
+      { number: "Amendment No. 3", date: "2019-11", summary: "Mandatory rolling mark requirement for grade, diameter, and manufacturer identification." }
+    ],
+    supersedes: "IS 1786 : 1985",
+    superseded_by: null,
+    product_categories: ["Structural Materials", "Steel & Metals", "Reinforcement Bars"],
+    technical_domains: ["Civil Engineering", "Structural Engineering", "Metallurgy"],
+    keywords: ["TMT bars", "reinforcement steel", "Fe 500D", "Fe 550D", "yield strength", "elongation", "seismic resistance", "concrete reinforcement", "rebar"],
+    applicable_products: [
+      "Thermo-Mechanically Treated (TMT) Rebars",
+      "High Strength Deformed Steel Bars",
+      "Earthquake Resistant Fe 500D Steel",
+      "Concrete Reinforcing Bars"
+    ],
+    test_methods: [
+      { clause: "Clause 9.1", title: "Tensile, Proof Stress and Yield Strength", description: "Conducted in accordance with IS 1608 (Part 1). Minimum 0.2% proof stress must meet grade designation (e.g. 500 N/mm² for Fe 500D)." },
+      { clause: "Clause 9.3", title: "Bend and Rebend Tests", description: "Tested around mandrels specified in Table 4 without transverse cracking on the tension zone." },
+      { clause: "Clause 7.2", title: "Chemical Composition (Spectrometric/Wet Method)", description: "Sulfur + Phosphorus maximum 0.075% for Fe 500D; Carbon maximum 0.25%." }
+    ],
+    safety_information: {
+      clause: "Clause 8.1",
+      title: "Minimum Elongation and TS/YS Ratio for Seismic Ductility",
+      description: "Fe 500D requires minimum 16.0% elongation and tensile-to-yield ratio >= 1.10 to prevent brittle failure under cyclical seismic forces."
+    },
+    installation_information: {
+      clause: "Reference to IS 456",
+      title: "Bar Bending, Lapping and Cover Requirements",
+      reference: "Follow IS 456 : 2000 Clause 26 for lap lengths, anchorage, and concrete clear cover."
+    },
+    terminology_information: "Deformed bar, proof stress, yield stress, nominal size, and rib geometry definitions per Clause 3.",
+    normative_references: [
+      { standard_number: "IS 1608 (Part 1) : 2018", title: "Metallic materials — Tensile testing — Part 1: Method of test at room temperature", relationship_type: "Test Method" },
+      { standard_number: "IS 456 : 2000", title: "Plain and Reinforced Concrete — Code of Practice (Fourth Revision)", relationship_type: "Structural Design Code" },
+      { standard_number: "IS 13920 : 2016", title: "Ductile design and detailing of reinforced concrete structures subjected to seismic forces", relationship_type: "Seismic Safety Standard" }
+    ],
+    allied_standards: [
+      { standard_number: "IS 2062 : 2011", title: "Hot Rolled Medium and High Tensile Structural Steel — Specification", relationship_type: "Allied Structural Steel" },
+      { standard_number: "IS 432 (Part 1) : 1982", title: "Mild steel and medium tensile steel bars and hard-drawn steel wire for concrete reinforcement", relationship_type: "Allied Reinforcement" }
+    ],
+    related_standards: [
+      { standard_number: "IS 2502 : 1963", title: "Code of practice for bending and fixing of bars for concrete reinforcement", relationship_type: "Fabrication Standard" }
+    ],
+    certification_information: {
+      scheme: "BIS Product Certification Scheme (Scheme-I, ISI Mark)",
+      mandatory_status: "Mandatory under Steel and Steel Products (Quality Control) Order",
+      source_order: "Ministry of Steel QCO 2018",
+      verification_note: "Mandatory ISI marking with legible embossed manufacturer name and grade every 1 metre."
+    },
+    source_document: "Bureau of Indian Standards — Metallurgical Engineering Division (MTD 28)",
+    source_location: "MTD 28 / IS 1786:2008 Specification Document"
+  },
+  {
+    standard_id: "IS-2062-2011",
+    standard_number: "IS 2062 : 2011",
+    title: "Hot Rolled Medium and High Tensile Structural Steel — Specification (Seventh Revision, Reaffirmed 2016)",
+    scope: "Covers requirements of structural steel sections, plates, sheets, and flats for use in bolted, riveted, and welded construction for bridges, industrial sheds, and multi-storey buildings.",
+    status: "Current",
+    publication_date: "2011-09-15",
+    current_version: "Seventh Revision (Reaffirmed 2016, with Amendments 1, 2 & 3)",
+    division: "MTD (Metallurgical Engineering Division)",
+    committee: "MTD 04 — Structural Steel Sectional Committee",
+    amendments: [
+      { number: "Amendment No. 2", date: "2017-03", summary: "Inclusion of impact testing criteria at sub-zero temperatures for sub-grade BR and BO." }
+    ],
+    supersedes: "IS 2062 : 2006",
+    superseded_by: null,
+    product_categories: ["Structural Materials", "Steel & Metals", "Infrastructure Girders"],
+    technical_domains: ["Civil Engineering", "Structural Design", "Highway & Bridge Engineering"],
+    keywords: ["structural steel", "E250", "E350", "hot rolled plates", "flyover girders", "weldability", "Charpy impact test", "beams", "angles"],
+    applicable_products: [
+      "Hot Rolled Steel Plates and Flats",
+      "Structural Beams, Joists and Channels",
+      "Steel Girders for Bridges and Flyovers",
+      "Fabricated Steel Columns"
+    ],
+    test_methods: [
+      { clause: "Clause 10.1", title: "Tensile Strength and Yield Stress", description: "Tested per IS 1608; minimum yield stress 250 MPa (E250) or 350 MPa (E350) based on nominal thickness." },
+      { clause: "Clause 11.1", title: "Charpy V-Notch Impact Test", description: "Conducted per IS 1757 at specified temperatures (0°C for Grade B, -20°C for Grade C)." }
+    ],
+    safety_information: {
+      clause: "Clause 8.2",
+      title: "Carbon Equivalent (CE) Limits for Weldability",
+      description: "Carbon equivalent calculated using IIW formula shall not exceed 0.42% for grade E250 Quality A to ensure crack-free welding."
+    },
+    installation_information: {
+      clause: "Cross-reference IS 800",
+      title: "Fabrication and Erection of Structural Steel",
+      reference: "Comply with IS 800 : 2007 (General Construction in Steel — Code of Practice)."
+    },
+    terminology_information: "Steel grade classifications (E250, E275, E300, E350, E410, E450) and quality designations (A, BR, BO, C) defined in Clause 4.",
+    normative_references: [
+      { standard_number: "IS 800 : 2007", title: "General Construction In Steel — Code of Practice (Third Revision)", relationship_type: "Design Code" },
+      { standard_number: "IS 1608 (Part 1) : 2018", title: "Metallic materials — Tensile testing", relationship_type: "Test Method" },
+      { standard_number: "IS 1757 : 1988", title: "Method for Charpy impact test (V-notch) for metallic materials", relationship_type: "Impact Test" }
+    ],
+    allied_standards: [
+      { standard_number: "IS 808 : 1989", title: "Dimensions for hot rolled steel beam, column, channel and angle sections", relationship_type: "Dimensional Standard" },
+      { standard_number: "IS 1239 (Part 1) : 2004", title: "Steel tubes, tubulars and other wrought steel fittings", relationship_type: "Piping & Hollow Sections" }
+    ],
+    related_standards: [
+      { standard_number: "IS 7215 : 1974", title: "Tolerances for fabrication of steel structures", relationship_type: "Workmanship Standard" }
+    ],
+    certification_information: {
+      scheme: "BIS Product Certification Scheme (Scheme-I, ISI Mark)",
+      mandatory_status: "Mandatory under Steel and Steel Products QCO",
+      source_order: "Ministry of Steel Notification 2019",
+      verification_note: "Test certificates must accompany each heat/batch indicating chemical CE and ladle analysis."
+    },
+    source_document: "Bureau of Indian Standards — Metallurgical Engineering Division (MTD 4)",
+    source_location: "MTD 4 / IS 2062:2011 Specification Document"
+  },
+  {
+    standard_id: "IS-800-2007",
+    standard_number: "IS 800 : 2007",
+    title: "General Construction in Steel — Code of Practice (Third Revision, Reaffirmed 2017)",
+    scope: "Covers the general, structural design and construction of steel buildings, bridges, and industrial structures utilizing limit state design philosophy.",
+    status: "Current",
+    publication_date: "2007-12-20",
+    current_version: "Third Revision (Reaffirmed 2017, with Amendments 1 & 2)",
+    division: "CED (Civil Engineering Division)",
+    committee: "CED 07 — Structural Steel Design",
+    amendments: [],
+    supersedes: "IS 800 : 1984",
+    superseded_by: null,
+    product_categories: ["Design Codes", "Structural Materials", "Civil Works"],
+    technical_domains: ["Structural Engineering", "Civil Engineering", "Bridge Design"],
+    keywords: ["limit state", "steel design", "welded connections", "bolted connections", "buckling class", "wind load", "composite girder"],
+    applicable_products: [
+      "Steel Flyover Bridges",
+      "Industrial Shed Trusses",
+      "Multi-Storey Steel Frames",
+      "Tower and Substation Structures"
+    ],
+    test_methods: [
+      { clause: "Section 10", title: "Bolted and Welded Joint Verification", description: "Design capacities calculated for shear, bearing, tension, and block shear rupture per Clause 10.3." }
+    ],
+    safety_information: {
+      clause: "Section 12",
+      title: "Design for Seismic and Fire Safety",
+      description: "Minimum member slenderness limits and ductility provisions under earthquake loading."
+    },
+    installation_information: {
+      clause: "Section 11",
+      title: "Fabrication and Erection Tolerances",
+      reference: "Assembly tolerances for column alignment, camber, and base plate grouting."
+    },
+    terminology_information: "Limit state of strength, limit state of serviceability, and plastic hinge definitions.",
+    normative_references: [
+      { standard_number: "IS 2062 : 2011", title: "Hot rolled structural steel", relationship_type: "Primary Material Standard" }
+    ],
+    allied_standards: [
+      { standard_number: "IS 875 (Parts 1-5)", title: "Code of practice for design loads (other than earthquake) for buildings and structures", relationship_type: "Loading Standard" }
+    ],
+    related_standards: [],
+    certification_information: {
+      scheme: "National Structural Code of Practice",
+      mandatory_status: "Mandatory across Ministry of Road Transport & Highways (MoRTH) works",
+      source_order: "MoRTH Bridge Specifications 2020",
+      verification_note: "Design calculation sheets must be certified by chartered structural engineer."
+    },
+    source_document: "Bureau of Indian Standards — Civil Engineering Division (CED 07)",
+    source_location: "CED 07 / IS 800:2007 Code of Practice"
+  },
+  {
+    standard_id: "IS-456-2000",
+    standard_number: "IS 456 : 2000",
+    title: "Plain and Reinforced Concrete — Code of Practice (Fourth Revision, Reaffirmed 2021)",
+    scope: "Covers the general structural design and construction of plain and reinforced concrete structures, with minimum cement content, water-cement ratios, durability criteria, and limit state design methods.",
+    status: "Current",
+    publication_date: "2000-10-15",
+    current_version: "Fourth Revision (Reaffirmed 2021, with Amendments 1, 2, 3, 4 & 5)",
+    division: "CED (Civil Engineering Division)",
+    committee: "CED 02 — Cement and Concrete Sectional Committee",
+    amendments: [
+      { number: "Amendment No. 3", date: "2007-08", summary: "Revision of minimum grade of concrete for RCC from M15 to M20 for moderate exposure." },
+      { number: "Amendment No. 5", date: "2019-07", summary: "Inclusion of manufactured sand (M-Sand) and mineral admixtures (fly ash, GGBS, silica fume)." }
+    ],
+    supersedes: "IS 456 : 1978",
+    superseded_by: null,
+    product_categories: ["Structural Materials", "Concrete & Cement", "Civil Works"],
+    technical_domains: ["Civil Engineering", "Structural Engineering", "Materials Technology"],
+    keywords: ["concrete", "RCC", "mix design", "M25", "M30", "compressive strength", "durability", "curing", "cover to reinforcement"],
+    applicable_products: [
+      "Ready Mixed Concrete (RMC)",
+      "Site Mixed Reinforced Concrete",
+      "Precast Concrete Elements",
+      "Foundation and Substructure Concrete"
+    ],
+    test_methods: [
+      { clause: "Clause 15.1", title: "Compressive Strength of Concrete Cubes", description: "Sampling of 150 mm cubes tested at 7 days and 28 days per IS 516. Acceptance criteria per Table 11." },
+      { clause: "Clause 7.1", title: "Workability / Slump Test", description: "Conducted per IS 1199; slump tolerances checked at point of discharge." }
+    ],
+    safety_information: {
+      clause: "Clause 8.2 & Table 5",
+      title: "Durability Requirements & Minimum Cement Content",
+      description: "Specifies maximum water-cement ratio and minimum cement content based on environmental exposure (Mild, Moderate, Severe, Very Severe, Extreme)."
+    },
+    installation_information: {
+      clause: "Clause 13",
+      title: "Compaction, Formwork Striking Times and Curing Period",
+      reference: "Minimum 7 days moist curing for OPC and 10 days for blended cements containing fly ash or slag."
+    },
+    terminology_information: "Characteristic strength, limit state of collapse, limit state of serviceability defined in Clause 35.",
+    normative_references: [
+      { standard_number: "IS 516 : 1959", title: "Method of test for strength of concrete", relationship_type: "Compressive Test" },
+      { standard_number: "IS 1199 : 1959", title: "Methods of sampling and analysis of concrete", relationship_type: "Sampling Reference" },
+      { standard_number: "IS 1786 : 2008", title: "High strength deformed steel bars and wires for concrete reinforcement", relationship_type: "Rebar Reinforcement" }
+    ],
+    allied_standards: [
+      { standard_number: "IS 10262 : 2019", title: "Concrete Mix Proportioning — Guidelines", relationship_type: "Mix Design Guide" },
+      { standard_number: "IS 4926 : 2003", title: "Ready-Mixed Concrete — Code of Practice", relationship_type: "RMC Procurement Code" }
+    ],
+    related_standards: [
+      { standard_number: "IS 13920 : 2016", title: "Ductile design and detailing of reinforced concrete structures", relationship_type: "Seismic Detailing" }
+    ],
+    certification_information: {
+      scheme: "Structural Code of Practice (Cited across all CPWD / State PWD Specifications)",
+      mandatory_status: "Mandatory code governing all public works concrete construction in India",
+      source_order: "CPWD Specifications 2019 & State PWD Codes",
+      verification_note: "Batch test reports of 28-day cube strengths must be certified before structural loading."
+    },
+    source_document: "Bureau of Indian Standards — Civil Engineering Division (CED 02)",
+    source_location: "CED 02 / IS 456:2000 Code of Practice Document"
+  },
+  {
+    standard_id: "IS-13920-2016",
+    standard_number: "IS 13920 : 2016",
+    title: "Ductile Design and Detailing of Reinforced Concrete Structures Subjected to Seismic Forces — Code of Practice (First Revision)",
+    scope: "Covers the requirements for designing and detailing of monolithic reinforced concrete building structures to withstand earthquake shaking without brittle collapse.",
+    status: "Current",
+    publication_date: "2016-12-10",
+    current_version: "First Revision",
+    division: "CED (Civil Engineering Division)",
+    committee: "CED 39 — Earthquake Engineering",
+    amendments: [],
+    supersedes: "IS 13920 : 1993",
+    superseded_by: null,
+    product_categories: ["Structural Materials", "Seismic Safety", "Design Codes"],
+    technical_domains: ["Earthquake Engineering", "Structural Engineering", "Civil Engineering"],
+    keywords: ["ductile detailing", "earthquake", "seismic zone", "confinement", "hoop spacing", "column stirrups", "beam column joint"],
+    applicable_products: [
+      "RCC Buildings in Seismic Zones III, IV & V",
+      "Public Infrastructure & Hospitals",
+      "Bridge Piers and Abutments",
+      "Elevated Water Reservoirs"
+    ],
+    test_methods: [
+      { clause: "Clause 7.6", title: "Special Confining Reinforcement", description: "Calculation of closely spaced hoops over critical yielding zones at beam-column junctions." }
+    ],
+    safety_information: {
+      clause: "Clause 5.1",
+      title: "Mandatory Steel Grade Ceiling",
+      description: "Only high-ductility rebar grades (Fe 415D, Fe 500D, Fe 550D) conforming to IS 1786 with >= 14.5-16% elongation are permitted."
+    },
+    installation_information: {
+      clause: "Clause 6.2",
+      title: "Bar Splicing and Mechanical Couplers",
+      reference: "No lap splices allowed within a distance of 2d from the column face."
+    },
+    terminology_information: "Confinement reinforcement, development length, and plastic hinge definitions.",
+    normative_references: [
+      { standard_number: "IS 1786 : 2008", title: "High strength deformed steel bars", relationship_type: "Ductile Steel Specification" },
+      { standard_number: "IS 456 : 2000", title: "Plain and reinforced concrete", relationship_type: "Parent Code" }
+    ],
+    allied_standards: [
+      { standard_number: "IS 1893 (Part 1) : 2016", title: "Criteria for earthquake resistant design of structures", relationship_type: "Seismic Force Base" }
+    ],
+    related_standards: [],
+    certification_information: {
+      scheme: "Mandatory National Seismic Code",
+      mandatory_status: "Mandatory under National Building Code 2016",
+      source_order: "Bureau of Indian Standards NBC 2016",
+      verification_note: "Bar bending schedules must clearly show seismic hook details (135° bends)."
+    },
+    source_document: "Bureau of Indian Standards — Civil Engineering Division (CED 39)",
+    source_location: "CED 39 / IS 13920:2016 Specification Document"
+  },
+
+  // --------------------------------------------------------------------------
+  // 3. ELECTRICAL, POWER & SUBSTATION INFRASTRUCTURE (ETD)
+  // --------------------------------------------------------------------------
+  {
+    standard_id: "IS-2026-PART1-2011",
+    standard_number: "IS 2026 (Part 1) : 2011",
+    title: "Power Transformers — Part 1: General (Second Revision)",
+    scope: "Applies to three-phase and single-phase power transformers (including auto-transformers) used in transmission, distribution, and industrial substations.",
+    status: "Current",
+    publication_date: "2011-04-12",
+    current_version: "Second Revision (Identical to IEC 60076-1:2011)",
+    division: "ETD (Electrotechnical Division)",
+    committee: "ETD 16 — Transformers Sectional Committee",
+    amendments: [
+      { number: "Amendment No. 1", date: "2015-08", summary: "Alignment of maximum loss levels with BEE star labelling guidelines." }
+    ],
+    supersedes: "IS 2026 (Part 1) : 1977",
+    superseded_by: null,
+    product_categories: ["Electrical Infrastructure", "Power Distribution", "Substation Equipment"],
+    technical_domains: ["Electrical Engineering", "High Voltage Engineering", "Energy Efficiency"],
+    keywords: ["power transformer", "distribution transformer", "1000 kVA", "33kV/11kV", "ONAN cooling", "copper wound", "no-load loss", "load loss", "impedance"],
+    applicable_products: [
+      "Substation Distribution Transformers (100 kVA to 2500 kVA)",
+      "Step-Down Power Transformers 33kV/11kV",
+      "Oil-Immersed Transformers (ONAN/ONAF)",
+      "Industrial Unit Auxiliary Transformers"
+    ],
+    test_methods: [
+      { clause: "Clause 11.1", title: "Routine Tests (Winding Resistance & Ratio)", description: "Measurement of winding resistance per IS 2026 (Part 1) and voltage ratio on all tap positions." },
+      { clause: "Clause 11.2", title: "Measurement of No-Load Loss and Current", description: "Measured at rated frequency and at voltage equal to rated voltage." },
+      { clause: "Clause 11.3", title: "Short-Circuit Impedance and Load Loss Test", description: "Measured at rated frequency with sinusoidal current injected on HV side with LV short-circuited." },
+      { clause: "Clause 11.4", title: "Temperature Rise Test", description: "Specified in IS 2026 (Part 2) under full load simulation." }
+    ],
+    safety_information: {
+      clause: "Clause 9.4",
+      title: "Insulation Level and Dielectric Withstand",
+      description: "Must withstand lightning impulse and separate source AC withstand voltages per IS 2026 (Part 3)."
+    },
+    installation_information: {
+      clause: "Cross-reference IS 10028",
+      title: "Substation Transformer Installation Code",
+      reference: "Follow IS 10028 (Part 1 to 3) for plinth mounting, oil containment pit, fire barriers, and earthing."
+    },
+    terminology_information: "Definitions of rated power, tapped winding, no-load loss, and cooling methods per Clause 3.",
+    normative_references: [
+      { standard_number: "IS 2026 (Part 2) : 2010", title: "Power transformers: Part 2 Temperature rise", relationship_type: "Thermal Testing Reference" },
+      { standard_number: "IS 2026 (Part 3) : 2009", title: "Power transformers: Part 3 Insulation levels, dielectric tests and external clearances in air", relationship_type: "Dielectric Safety Reference" },
+      { standard_number: "IS 335 : 2018", title: "Uninhibited and inhibited mineral insulating oils — Specification", relationship_type: "Insulating Material Reference" }
+    ],
+    allied_standards: [
+      { standard_number: "IS 1180 (Part 1) : 2014", title: "Outdoor type oil immersed distribution transformers up to and including 2500 kVA, 33 kV — Specification", relationship_type: "Distribution Specific Standard" },
+      { standard_number: "IS 3043 : 2018", title: "Code of practice for earthing", relationship_type: "Earthing Reference" }
+    ],
+    related_standards: [
+      { standard_number: "IS 10028 (Part 2) : 1981", title: "Code of practice for selection, installation and maintenance of transformers: Part 2 Installation", relationship_type: "Installation Code" }
+    ],
+    certification_information: {
+      scheme: "BIS Mandatory Certification Scheme (Scheme-I, ISI Mark) & BEE Star Labelling",
+      mandatory_status: "Mandatory under Distribution Transformers Quality Control Order",
+      source_order: "Ministry of Power / Central Electricity Authority Technical Regulations",
+      verification_note: "Transformers up to 2500 kVA, 33kV must comply with IS 1180 (Part 1) energy efficiency levels."
+    },
+    source_document: "Bureau of Indian Standards — Electrotechnical Division (ETD 16)",
+    source_location: "ETD 16 / IS 2026 (Part 1) Specification Document"
+  },
+  {
+    standard_id: "IS-1180-PART1-2014",
+    standard_number: "IS 1180 (Part 1) : 2014",
+    title: "Outdoor Type Oil Immersed Distribution Transformers up to and Including 2500 kVA, 33 kV — Specification",
+    scope: "Covers specifications for 11 kV, 22 kV, and 33 kV distribution transformers up to 2500 kVA including standard ratings, maximum permissible losses at 50% and 100% loading, and star rating tiers.",
+    status: "Current",
+    publication_date: "2014-07-25",
+    current_version: "Second Revision (with Amendments 1, 2, 3 & 4)",
+    division: "ETD (Electrotechnical Division)",
+    committee: "ETD 16 — Transformers Sectional Committee",
+    amendments: [
+      { number: "Amendment No. 2", date: "2018-05", summary: "Mandatory loss levels aligned with Energy Conservation Act Energy Efficiency Level 2." }
+    ],
+    supersedes: "IS 1180 (Part 1) : 1989",
+    superseded_by: null,
+    product_categories: ["Electrical Infrastructure", "Power Distribution", "Energy Efficiency"],
+    technical_domains: ["Electrical Engineering", "Energy Conservation"],
+    keywords: ["distribution transformer", "BEE star rating", "loss levels", "11kV", "33kV", "copper conductor", "aluminium conductor", "rural electrification"],
+    applicable_products: [
+      "Pole Mounted Distribution Transformers (16 to 100 kVA)",
+      "Plinth Mounted Substation Transformers (250 to 2500 kVA)",
+      "DISCOM Piped Scheme Transformers"
+    ],
+    test_methods: [
+      { clause: "Clause 21.2", title: "Total Losses at 50% and 100% Loading", description: "Measured at 75°C; total losses must not exceed values in Table 3 (Energy Efficiency Level 2)." },
+      { clause: "Clause 21.3", title: "Pressure and Vacuum Tank Withstand", description: "Tank must withstand 80 kPa internal pressure for 30 minutes with zero leakage." }
+    ],
+    safety_information: {
+      clause: "Clause 14",
+      title: "Explosion Vent / Pressure Relief Device",
+      description: "Mandatory provision of diaphragm or spring-loaded PRD to prevent catastrophic tank rupture."
+    },
+    installation_information: {
+      clause: "Clause 23",
+      title: "Mounting Arrangements and Clearances",
+      reference: "Comply with CEA safety regulations regarding clearances to live parts."
+    },
+    terminology_information: "Standard ratings: 16, 25, 63, 100, 160, 250, 315, 400, 500, 630, 1000, 1250, 1600, 2000, 2500 kVA.",
+    normative_references: [
+      { standard_number: "IS 2026 (Part 1) : 2011", title: "Power transformers — General", relationship_type: "Parent Code" },
+      { standard_number: "IS 335 : 2018", title: "Insulating mineral oil", relationship_type: "Dielectric Fluid Standard" }
+    ],
+    allied_standards: [
+      { standard_number: "IS 3043 : 2018", title: "Code of practice for earthing", relationship_type: "Safety Earthing" }
+    ],
+    related_standards: [],
+    certification_information: {
+      scheme: "BIS Product Certification Scheme (Scheme-I, ISI Mark) & BEE Star Rating",
+      mandatory_status: "Mandatory statutory compliance under Central Electricity Authority Regulations",
+      source_order: "Ministry of Power QCO",
+      verification_note: "BEE star rating label with registered QR code mandatory on nameplate."
+    },
+    source_document: "Bureau of Indian Standards — Electrotechnical Division (ETD 16)",
+    source_location: "ETD 16 / IS 1180 (Part 1) Specification Document"
+  },
+  {
+    standard_id: "IS-IEC-60947-PART2-2016",
+    standard_number: "IS/IEC 60947 (Part 2) : 2016",
+    title: "Low-Voltage Switchgear and Controlgear — Part 2: Circuit-Breakers (First Revision)",
+    scope: "Applies to circuit-breakers whose main contacts are intended to be connected to circuits, the rated voltage of which does not exceed 1000 V AC or 1500 V DC, including Air Circuit Breakers (ACB) and Moulded Case Circuit Breakers (MCCB).",
+    status: "Current",
+    publication_date: "2016-11-20",
+    current_version: "First Revision (Adopted from IEC 60947-2:2016)",
+    division: "ETD (Electrotechnical Division)",
+    committee: "ETD 07 — Low-Voltage Switchgear and Controlgear",
+    amendments: [
+      { number: "Corrigendum 1", date: "2018-02", summary: "Correction of electromagnetic compatibility test limits in Annex B." }
+    ],
+    supersedes: "IS 13947 (Part 2) : 1993",
+    superseded_by: null,
+    product_categories: ["Electrical Infrastructure", "Low Voltage Switchgear", "Circuit Protection"],
+    technical_domains: ["Electrical Engineering", "Industrial Power Distribution", "System Protection"],
+    keywords: ["MCCB", "ACB", "circuit breaker", "short-circuit breaking capacity", "Ics", "Icu", "tripping unit", "isolation", "switchboard", "air circuit breaker"],
+    applicable_products: [
+      "Moulded Case Circuit Breakers (MCCB)",
+      "Air Circuit Breakers (ACB)",
+      "Motor Protection Circuit Breakers (MPCB)",
+      "Low Voltage Switchboard Incomers"
+    ],
+    test_methods: [
+      { clause: "Clause 8.3.3", title: "Test Sequence I — Tripping Limits and Temperature Rise", description: "Verification of thermal and magnetic/electronic trip characteristics and main terminal temperature rise." },
+      { clause: "Clause 8.3.4", title: "Test Sequence II — Rated Service Short-Circuit Breaking Capacity (Ics)", description: "Verification that circuit breaker can interrupt short-circuit current repeatedly and remain functional (Ics = 100% Icu)." },
+      { clause: "Clause 8.3.5", title: "Test Sequence III — Ultimate Short-Circuit Breaking Capacity (Icu)", description: "Verification of maximum short-circuit current interruption under O-t-CO operating sequence." }
+    ],
+    safety_information: {
+      clause: "Clause 7.1.6",
+      title: "Suitability for Isolation",
+      description: "Circuit breaker designated for isolation must provide positive break indication and withstand impulse test voltage across open contacts."
+    },
+    installation_information: {
+      clause: "Reference to IS 732 and IS/IEC 61439",
+      title: "Enclosure, Clearance and Creepage Standards",
+      reference: "Assembly into switchboards must comply with IS/IEC 61439 (Part 1 & 2) with ingress protection IP42 to IP54."
+    },
+    terminology_information: "Distinction between Category A (non-selective) and Category B (selective with short-time delay) circuit-breakers per Clause 4.4.",
+    normative_references: [
+      { standard_number: "IS/IEC 60947 (Part 1) : 2015", title: "Low-voltage switchgear and controlgear — Part 1: General rules", relationship_type: "Parent Standard" },
+      { standard_number: "IS/IEC 61439 (Part 1) : 2011", title: "Low-voltage switchgear and controlgear assemblies: Part 1 General rules", relationship_type: "Assembly Integration" }
+    ],
+    allied_standards: [
+      { standard_number: "IS 12640 (Part 1) : 2016", title: "Residual current operated circuit-breakers for household and similar uses (RCCBs)", relationship_type: "Allied Protection" },
+      { standard_number: "IS 8623 : 1993", title: "Specification for low-voltage switchgear and controlgear assemblies", relationship_type: "Legacy Switchboard Code" }
+    ],
+    related_standards: [
+      { standard_number: "IS 3043 : 2018", title: "Code of practice for earthing", relationship_type: "Earthing Safety" }
+    ],
+    certification_information: {
+      scheme: "BIS Product Certification Scheme (Scheme-I, ISI Mark)",
+      mandatory_status: "Mandatory under Low-Voltage Switchgear and Controlgear (Quality Control) Order",
+      source_order: "Ministry of Heavy Industries QCO 2020",
+      verification_note: "Verify test certificate from NABL-accredited or CPRI/ERDA laboratory."
+    },
+    source_document: "Bureau of Indian Standards — Electrotechnical Division (ETD 07)",
+    source_location: "ETD 07 / IS/IEC 60947 (Part 2) Specification Document"
+  },
+  {
+    standard_id: "IS-732-2019",
+    standard_number: "IS 732 : 2019",
+    title: "Code of Practice for Electrical Wiring Installations (Fourth Revision)",
+    scope: "Covers the design, selection, erection, inspection, and testing of electrical wiring installations in domestic, commercial, public, and industrial premises for operating voltages up to 1000 V AC.",
+    status: "Current",
+    publication_date: "2019-03-25",
+    current_version: "Fourth Revision (harmonized with IEC 60364 series)",
+    division: "ETD (Electrotechnical Division)",
+    committee: "ETD 20 — Electrical Installation Sectional Committee",
+    amendments: [],
+    supersedes: "IS 732 : 1989",
+    superseded_by: null,
+    product_categories: ["Electrical Infrastructure", "Building Installations", "Wiring & Safety"],
+    technical_domains: ["Electrical Engineering", "Fire & Life Safety", "Building Architecture"],
+    keywords: ["electrical wiring", "conduit", "cable installation", "insulation resistance", "RCD", "earthing loop impedance", "fire safety", "building code"],
+    applicable_products: [
+      "Building Electrical Wiring Systems",
+      "PVC Conduit Wiring Systems",
+      "Distribution Board Layouts",
+      "Institutional Sub-Distribution Panels"
+    ],
+    test_methods: [
+      { clause: "Clause 61.3.2", title: "Continuity of Conductors Test", description: "Verification of low-resistance continuity of protective conductors and bonding conductors using 200 mA DC source." },
+      { clause: "Clause 61.3.3", title: "Insulation Resistance Test", description: "Test between live conductors and earth at 500 V DC test voltage; minimum value 1.0 Megaohm." },
+      { clause: "Clause 61.3.7", title: "Residual Current Device (RCD) Verification", description: "Verification of trip time within 40 ms at 5 times rated residual operating current (IΔn)." }
+    ],
+    safety_information: {
+      clause: "Clause 411",
+      title: "Protection Against Electric Shock (Automatic Disconnection)",
+      description: "Mandatory provision of residual current devices with rated operating current not exceeding 30 mA for all socket outlet circuits."
+    },
+    installation_information: {
+      clause: "Clause 52",
+      title: "Wiring Systems, Current-Carrying Capacities and Voltage Drop",
+      reference: "Maximum permissible voltage drop from installation origin to load point must not exceed 4% for lighting and 5% for power."
+    },
+    terminology_information: "TN-S, TN-C-S, and TT earthing arrangements, basic protection, and fault protection defined in Clause 2.",
+    normative_references: [
+      { standard_number: "IS 694 : 2010", title: "Polyvinyl chloride insulated unsheathed and sheathed cables/cords with rigid and flexible conductor", relationship_type: "Cable Conductor Baseline" },
+      { standard_number: "IS 3043 : 2018", title: "Code of practice for earthing (Second Revision)", relationship_type: "Earthing Code" },
+      { standard_number: "IS 9537 (Part 2) : 1981", title: "Conduits for electrical installations: Part 2 Rigid plain conduits of insulating materials", relationship_type: "Conduit Standard" }
+    ],
+    allied_standards: [
+      { standard_number: "IS/IEC 60947 (Part 2) : 2016", title: "Low-voltage switchgear and controlgear — Circuit-breakers", relationship_type: "Switchboard Protection" },
+      { standard_number: "IS 12640 (Part 1) : 2016", title: "Residual current operated circuit-breakers without integral overcurrent protection (RCCBs)", relationship_type: "Shock Protection Component" }
+    ],
+    related_standards: [
+      { standard_number: "National Building Code 2016 (Part 8, Section 2)", title: "Electrical and Allied Installations", relationship_type: "National Code Baseline" }
+    ],
+    certification_information: {
+      scheme: "Statutory Compliance under Central Electricity Authority (CEA) Regulations",
+      mandatory_status: "Mandatory under CEA (Measures relating to Safety and Electric Supply) Regulations 2010",
+      source_order: "Central Electricity Authority Safety Notification",
+      verification_note: "Electrical installation completion certificate signed by licensed electrical supervisor required before commissioning."
+    },
+    source_document: "Bureau of Indian Standards — Electrotechnical Division (ETD 20)",
+    source_location: "ETD 20 / IS 732:2019 Code of Practice Document"
+  },
+  {
+    standard_id: "IS-3043-2018",
+    standard_number: "IS 3043 : 2018",
+    title: "Code of Practice for Earthing (Second Revision)",
+    scope: "Covers the design, installation, calculation of earth resistance, earth electrodes, and testing of earthing systems for electrical installations in substations, buildings, and industrial plants.",
+    status: "Current",
+    publication_date: "2018-12-05",
+    current_version: "Second Revision",
+    division: "ETD (Electrotechnical Division)",
+    committee: "ETD 20 — Electrical Installation Sectional Committee",
+    amendments: [],
+    supersedes: "IS 3043 : 1987",
+    superseded_by: null,
+    product_categories: ["Electrical Infrastructure", "Earthing & Safety", "Substation Equipment"],
+    technical_domains: ["Electrical Engineering", "Safety Engineering"],
+    keywords: ["earthing", "earth pit", "pipe electrode", "plate electrode", "soil resistivity", "earth grid", "step potential", "touch potential", "GI strip"],
+    applicable_products: [
+      "Substation Earth Mat Grids",
+      "Chemical Maintenance-Free Earth Electrodes",
+      "Galvanized Iron / Copper Earth Strips",
+      "Building Lightning Protection Earthing"
+    ],
+    test_methods: [
+      { clause: "Clause 36.1", title: "Earth Resistance Fall-of-Potential Test", description: "Measurement using four-terminal earth tester; resistance of substation grid must not exceed 1.0 Ohm." }
+    ],
+    safety_information: {
+      clause: "Section 4",
+      title: "Step and Touch Potential Safety Thresholds",
+      description: "Human tolerable touch and step voltages calculated based on body weight (50kg/70kg) and surface gravel resistivity."
+    },
+    installation_information: {
+      clause: "Clause 14",
+      title: "Electrode Sizing and Backfill Soil Treatment",
+      reference: "Minimum 3.0 m pipe electrode or 600x600x3mm copper plate surrounded by bentonite/carbon composite compound."
+    },
+    terminology_information: "Earth electrode, earthing conductor, protective conductor (PE), and equipotential bonding definitions.",
+    normative_references: [
+      { standard_number: "IS 732 : 2019", title: "Code of practice for electrical wiring installations", relationship_type: "Wiring Integration" }
+    ],
+    allied_standards: [
+      { standard_number: "IS 2026 (Part 1) : 2011", title: "Power transformers", relationship_type: "Neutral Earthing" }
+    ],
+    related_standards: [],
+    certification_information: {
+      scheme: "Mandatory Safety Code under CEA Regulations",
+      mandatory_status: "Mandatory under Central Electricity Authority Regulations 2010",
+      source_order: "CEA Safety Regulations Clause 41",
+      verification_note: "Soil resistivity test report and earth pit resistance test logs required before energization."
+    },
+    source_document: "Bureau of Indian Standards — Electrotechnical Division (ETD 20)",
+    source_location: "ETD 20 / IS 3043:2018 Code of Practice Document"
+  },
+  {
+    standard_id: "IS-694-2010",
+    standard_number: "IS 694 : 2010",
+    title: "Polyvinyl Chloride Insulated Unsheathed and Sheathed Cables/Cords with Rigid and Flexible Conductor for Working Voltages up to and Including 450/750 V — Specification (Fourth Revision)",
+    scope: "Covers single-core and multi-core PVC insulated copper and aluminium cables for electric power and lighting in residential, commercial, and industrial wiring.",
+    status: "Current",
+    publication_date: "2010-09-18",
+    current_version: "Fourth Revision (Reaffirmed 2020)",
+    division: "ETD (Electrotechnical Division)",
+    committee: "ETD 09 — Power Cables Sectional Committee",
+    amendments: [
+      { number: "Amendment No. 1", date: "2014-03", summary: "Requirements for Flame Retardant (FR) and Flame Retardant Low Smoke (FRLS) insulation grades." }
+    ],
+    supersedes: "IS 694 : 1990",
+    superseded_by: null,
+    product_categories: ["Electrical Infrastructure", "Cables & Conductors", "Wiring & Safety"],
+    technical_domains: ["Electrical Engineering", "Fire & Life Safety"],
+    keywords: ["PVC cable", "FRLS", "copper wire", "single core", "multicore", "flame retardant", "insulation resistance", "conductor resistance"],
+    applicable_products: [
+      "FRLS House Wires (1.0 to 10.0 sq mm)",
+      "Multi-core Industrial Control Cables",
+      "Submersible Pump Flat Cables",
+      "Distribution Board Incomer Leads"
+    ],
+    test_methods: [
+      { clause: "Clause 14.1", title: "Conductor Resistance Test", description: "Conducted per IS 8130 at 20°C; maximum DC resistance specified per conductor cross-section." },
+      { clause: "Clause 14.2", title: "High Voltage Spark Test", description: "Insulation subjected to spark test voltage (up to 10 kV) during extrusion without breakdown." },
+      { clause: "Clause 14.3", title: "Oxygen Index and Flammability Test", description: "Oxygen index of FRLS sheath >= 29% per IS 10810 (Part 58)." }
+    ],
+    safety_information: {
+      clause: "Clause 6.2",
+      title: "Fire Retardance and Low Toxic Gas Emission",
+      description: "Mandatory in institutional public buildings to prevent rapid fire spread and asphyxiating smoke."
+    },
+    installation_information: {
+      clause: "Reference to IS 732",
+      title: "Conduit Derating Factors",
+      reference: "Current carrying capacity derated based on grouping and ambient temperature per IS 732."
+    },
+    terminology_information: "Classes of conductors (Class 1 solid, Class 2 stranded, Class 5 flexible) defined in IS 8130.",
+    normative_references: [
+      { standard_number: "IS 8130 : 2013", title: "Conductors for insulated electric cables and flexible cords", relationship_type: "Conductor Specification" },
+      { standard_number: "IS 5831 : 1984", title: "PVC insulation and sheath of electric cables", relationship_type: "Compound Specification" }
+    ],
+    allied_standards: [
+      { standard_number: "IS 732 : 2019", title: "Electrical wiring code", relationship_type: "Installation Code" }
+    ],
+    related_standards: [],
+    certification_information: {
+      scheme: "BIS Product Certification Scheme (Scheme-I, ISI Mark)",
+      mandatory_status: "Mandatory under Electrical Wires and Cables QCO",
+      source_order: "DPIIT Quality Control Order 2023",
+      verification_note: "Verify continuous ISI marking on cable outer sheath."
+    },
+    source_document: "Bureau of Indian Standards — Electrotechnical Division (ETD 09)",
+    source_location: "ETD 09 / IS 694:2010 Specification Document"
+  },
+
+  // --------------------------------------------------------------------------
+  // 4. INFORMATION TECHNOLOGY, ELECTRONICS & SURVEILLANCE (LITD)
+  // --------------------------------------------------------------------------
+  {
+    standard_id: "IS-16844-2018",
+    standard_number: "IS 16844 : 2018",
+    title: "CCTV Cameras for Surveillance Systems — Specification",
+    scope: "Specifies requirements for video surveillance cameras including analog, HD analog, and IP network cameras (bullet, dome, PTZ) used in public surveillance, government installations, and smart city infrastructure.",
+    status: "Current",
+    publication_date: "2018-05-18",
+    current_version: "First Edition (with Amendment No. 1: 2021)",
+    division: "LITD (Electronics and Information Technology Division)",
+    committee: "LITD 10 — Alarms and Electronic Security Systems",
+    amendments: [
+      { number: "Amendment No. 1", date: "2021-03", summary: "Inclusion of cyber security hardening criteria, trusted supply chain guidelines, and TLS 1.3 protocol requirement." }
+    ],
+    supersedes: null,
+    superseded_by: null,
+    product_categories: ["Information Technology", "Surveillance & Security", "Smart Cities"],
+    technical_domains: ["Electronics & IT", "Optical Engineering", "Network Security"],
+    keywords: ["CCTV", "IP camera", "surveillance", "ONVIF", "H.265", "IK10", "IP67", "smart city", "video recording", "night vision", "cybersecurity"],
+    applicable_products: [
+      "IP Network Bullet Cameras",
+      "Vandal-Resistant Dome Cameras",
+      "Pan-Tilt-Zoom (PTZ) Surveillance Cameras",
+      "Smart City Edge Analytics Cameras"
+    ],
+    test_methods: [
+      { clause: "Clause 6.2", title: "Image Resolution & MTF (Modulation Transfer Function)", description: "Measurement of spatial resolution under daylight (1000 lux) and low-light conditions using ISO 12233 test chart." },
+      { clause: "Clause 6.5", title: "Minimum Illumination Sensitivity", description: "Color imaging sensitivity verified at 0.005 lux (F1.2, AGC ON, 30 IRE)." },
+      { clause: "Clause 7.1", title: "Environmental Ingress Protection (IP66/IP67)", description: "Conducted per IS/IEC 60529 for dust-tightness and water immersion." },
+      { clause: "Clause 7.3", title: "Mechanical Impact Resistance (IK10)", description: "Tested in accordance with IS/IEC 62262 using 5.0 kg drop hammer delivering 20 Joules impact." }
+    ],
+    safety_information: {
+      clause: "Clause 8.1",
+      title: "Electrical Safety & Fire Retardance",
+      description: "Must comply with IS 13252 (Part 1) for information technology equipment safety and power over ethernet (PoE) insulation."
+    },
+    installation_information: {
+      clause: "Clause 9.2",
+      title: "Mounting, Surge Protection and Weatherproofing",
+      reference: "External cameras must include minimum 4kV surge protection per IS/IEC 61000-4-5."
+    },
+    terminology_information: "Surveillance classifications, optical sensor size, dynamic range (WDR), and bitrate profiles defined in Clause 3.",
+    normative_references: [
+      { standard_number: "IS 13252 (Part 1) : 2010", title: "Information Technology Equipment — Safety: General Requirements", relationship_type: "Mandatory Safety Baseline" },
+      { standard_number: "IS/IEC 60529 : 2001", title: "Degrees of protection provided by enclosures (IP Code)", relationship_type: "Environmental Ingress Test" },
+      { standard_number: "IS/IEC 62262 : 2002", title: "Degrees of protection provided by enclosures for electrical equipment against external mechanical impacts (IK code)", relationship_type: "Impact Resistance Test" }
+    ],
+    allied_standards: [
+      { standard_number: "IS 16333 (Part 3) : 2022", title: "Mobile Phone Handsets / Display Devices — Indian Language Support", relationship_type: "Language Compliance" },
+      { standard_number: "IS 16845 : 2019", title: "Network Video Recorders (NVR) for Surveillance Systems — Specification", relationship_type: "Recording Backend" }
+    ],
+    related_standards: [
+      { standard_number: "IS/IEC 62676 (Part 1-1) : 2013", title: "Video surveillance systems for use in security applications — System requirements", relationship_type: "System Architecture" }
+    ],
+    certification_information: {
+      scheme: "Compulsory Registration Scheme (CRS) under MeitY / BIS",
+      mandatory_status: "Mandatory CRS registration for CCTV cameras and Network Video Recorders",
+      source_order: "Ministry of Electronics and Information Technology (MeitY) CRO Phase IV",
+      verification_note: "Check valid R-number on BIS CRS portal; test report must include cyber security provisions."
+    },
+    source_document: "Bureau of Indian Standards — Electronics and Information Technology Division (LITD 10)",
+    source_location: "LITD 10 / IS 16844:2018 Specification Document"
+  },
+  {
+    standard_id: "IS-13252-PART1-2010",
+    standard_number: "IS 13252 (Part 1) : 2010",
+    title: "Information Technology Equipment — Safety: Part 1 General Requirements (Second Revision)",
+    scope: "Applies to mains-powered or battery-powered information technology equipment, including electrical business equipment and associated equipment, with a rated voltage not exceeding 600 V.",
+    status: "Current",
+    publication_date: "2010-06-25",
+    current_version: "Second Revision (Identical to IEC 60950-1:2005 with Indian deviations)",
+    division: "LITD (Electronics and Information Technology Division)",
+    committee: "LITD 08 — Information Technology Safety",
+    amendments: [
+      { number: "Amendment No. 2", date: "2015-12", summary: "Harmonization with tropical climate operating conditions (temperature up to 45°C)." }
+    ],
+    supersedes: "IS 13252 : 2003",
+    superseded_by: null,
+    product_categories: ["Information Technology", "Electronics & IT", "Office Automation"],
+    technical_domains: ["Electronics & IT", "Product Safety", "Electrical Safety"],
+    keywords: ["IT equipment", "servers", "laptops", "power supply", "dielectric strength", "touch current", "fire enclosure", "CRS", "safety", "routers"],
+    applicable_products: [
+      "Enterprise Rack Servers and Storage Arrays",
+      "Network Switches, Routers and Gateways",
+      "Desktop Computers and Laptops",
+      "Power Adapters and Switch Mode Power Supplies (SMPS)"
+    ],
+    test_methods: [
+      { clause: "Clause 5.1", title: "Touch Current and Protective Conductor Current", description: "Measured per IEC 60990 under normal and single fault conditions; maximum 3.5 mA for Class I equipment." },
+      { clause: "Clause 5.2", title: "Electric Strength (Dielectric Withstand)", description: "Test voltage applied across reinforced insulation (3000 V AC or 4242 V DC) for 60 seconds without breakdown." },
+      { clause: "Clause 4.5", title: "Thermal and Heating Requirements", description: "Verification of component temperatures under maximum rated ambient temperature." }
+    ],
+    safety_information: {
+      clause: "Clause 4.7",
+      title: "Resistance to Fire and Flammability Rating",
+      description: "Fire enclosures must use materials rated V-1 or better per IS 11731 (Part 2) / UL 94."
+    },
+    installation_information: {
+      clause: "Clause 1.7",
+      title: "Marking, Rating Labels and User Instructions",
+      reference: "Equipment must display input ratings, manufacturer details, and BIS Standard Mark with R-number."
+    },
+    terminology_information: "SELV (Safety Extra Low Voltage), ELV, Hazardous voltage, and creepage distance defined in Clause 1.2.",
+    normative_references: [
+      { standard_number: "IS 616 : 2017", title: "Audio, video and similar electronic apparatus — Safety requirements", relationship_type: "Allied Electronic Safety" },
+      { standard_number: "IS/IEC 60950-1 : 2005", title: "Information technology equipment - Safety", relationship_type: "International Reference" }
+    ],
+    allied_standards: [
+      { standard_number: "IS 16844 : 2018", title: "CCTV Cameras for Surveillance Systems — Specification", relationship_type: "Surveillance Category" },
+      { standard_number: "IS 16333 (Part 3) : 2022", title: "Mobile Phone Handsets — Indian Language Support", relationship_type: "Language Input Standard" }
+    ],
+    related_standards: [
+      { standard_number: "IS/IEC 62368-1 : 2018", title: "Audio/video, information and communication technology equipment - Part 1: Safety requirements", relationship_type: "Future Harmonization" }
+    ],
+    certification_information: {
+      scheme: "Compulsory Registration Scheme (CRS) under MeitY / BIS",
+      mandatory_status: "Mandatory registration under Electronics and IT Goods (Requirement for Compulsory Registration) Order",
+      source_order: "MeitY CRO Gazette Orders 2012–2021",
+      verification_note: "Verify registration status on www.crsbis.in before issuing supply purchase orders."
+    },
+    source_document: "Bureau of Indian Standards — Electronics and Information Technology Division (LITD 08)",
+    source_location: "LITD 08 / IS 13252 (Part 1) Specification Document"
+  },
+  {
+    standard_id: "IS-IEC-60529-2001",
+    standard_number: "IS/IEC 60529 : 2001",
+    title: "Degrees of Protection Provided by Enclosures (IP Code)",
+    scope: "Classifies degrees of protection provided by enclosures of electrical equipment against ingress of solid foreign objects (dust, probes) and water.",
+    status: "Current",
+    publication_date: "2001-08-20",
+    current_version: "First Edition (Reaffirmed 2019)",
+    division: "ETD (Electrotechnical Division)",
+    committee: "ETD 07 — Low-Voltage Switchgear and Controlgear",
+    amendments: [],
+    supersedes: "IS 2147 : 1962",
+    superseded_by: null,
+    product_categories: ["Testing Codes", "Environmental Protection", "Enclosures"],
+    technical_domains: ["Electrical Engineering", "Electronics & IT", "Mechanical Testing"],
+    keywords: ["IP code", "IP65", "IP66", "IP67", "IP54", "dust proof", "waterproof", "immersion test", "enclosure"],
+    applicable_products: [
+      "Outdoor CCTV Cameras (IP67)",
+      "Substation Switchboards (IP54)",
+      "Solar Street Lighting Fixtures (IP66)",
+      "Pump Control Panels (IP55)"
+    ],
+    test_methods: [
+      { clause: "Clause 13", title: "Dust Ingress Test (First Characteristic Numeral 5 and 6)", description: "Talcum powder suspension agitated in test chamber with vacuum under-pressure; zero dust ingress for IP6X." },
+      { clause: "Clause 14", title: "Water Ingress Test (Second Characteristic Numeral 4 to 8)", description: "Oscillating spray tube (IPX4), water jet nozzle 12.5mm (IPX6), or immersion in 1.0m water for 30 minutes (IPX7)." }
+    ],
+    safety_information: {
+      clause: "Clause 12",
+      title: "Protection Against Access to Hazardous Parts",
+      description: "Standard jointed test finger and probe wires must not penetrate into contact with energized circuits."
+    },
+    installation_information: {
+      clause: "Clause 15",
+      title: "Gasket Sealing and Cable Gland Installation",
+      reference: "All cable entry knockouts must use certified IP-rated cable glands to maintain rating."
+    },
+    terminology_information: "First numeral (0 to 6) for solids/dust; second numeral (0 to 9) for water ingress.",
+    normative_references: [],
+    allied_standards: [
+      { standard_number: "IS/IEC 62262 : 2002", title: "IK Code for mechanical impact", relationship_type: "Mechanical Sibling Standard" }
+    ],
+    related_standards: [],
+    certification_information: {
+      scheme: "Mandatory Testing Code across all Electrical & IT Tenders",
+      mandatory_status: "Mandatory testing criteria cited across outdoor equipment specifications",
+      source_order: "CPWD Electrical Specifications 2020",
+      verification_note: "NABL accredited lab test report with photographic evidence required."
+    },
+    source_document: "Bureau of Indian Standards — Electrotechnical Division (ETD 07)",
+    source_location: "ETD 07 / IS/IEC 60529:2001 Specification Document"
+  },
+  {
+    standard_id: "IS-IEC-62262-2002",
+    standard_number: "IS/IEC 62262 : 2002",
+    title: "Degrees of Protection Provided by Enclosures for Electrical Equipment Against External Mechanical Impacts (IK Code)",
+    scope: "Defines the coding system and testing methods for the degrees of protection provided by enclosures against external mechanical impacts (vandal resistance).",
+    status: "Current",
+    publication_date: "2002-10-15",
+    current_version: "First Edition (Reaffirmed 2019)",
+    division: "ETD (Electrotechnical Division)",
+    committee: "ETD 07 — Low-Voltage Switchgear and Controlgear",
+    amendments: [],
+    supersedes: null,
+    superseded_by: null,
+    product_categories: ["Testing Codes", "Mechanical Protection", "Enclosures"],
+    technical_domains: ["Mechanical Testing", "Surveillance & Security"],
+    keywords: ["IK code", "IK10", "IK08", "vandal resistant", "impact energy", "joules", "drop hammer test", "smart city camera"],
+    applicable_products: [
+      "Public Junction CCTV Dome Cameras (IK10)",
+      "Street Furniture & Public Information Displays",
+      "Outdoor Electric Vehicle (EV) Charging Plinths",
+      "Highway Emergency Call Boxes"
+    ],
+    test_methods: [
+      { clause: "Clause 7", title: "Impact Test Procedure (IK01 to IK10)", description: "Conducted using free fall drop hammer or pendulum hammer delivering calibrated impact energy (20.0 Joules for IK10, 5.0 kg dropped from 400 mm)." }
+    ],
+    safety_information: {
+      clause: "Clause 6",
+      title: "Verification Criteria Post-Impact",
+      description: "Enclosure must maintain structural integrity, IP rating, and prevent contact with live electrical parts."
+    },
+    installation_information: {
+      clause: "Clause 5",
+      title: "Rigid Base Mounting Conditions",
+      reference: "Specimen must be bolted to rigid solid support during test."
+    },
+    terminology_information: "IK00 (unprotected) up to IK10 (20 Joules impact resistance) defined in Table 1.",
+    normative_references: [
+      { standard_number: "IS/IEC 60529 : 2001", title: "Degrees of protection provided by enclosures (IP Code)", relationship_type: "Ingress Reference" }
+    ],
+    allied_standards: [
+      { standard_number: "IS 16844 : 2018", title: "CCTV Cameras for Surveillance Systems", relationship_type: "Parent Equipment Standard" }
+    ],
+    related_standards: [],
+    certification_information: {
+      scheme: "Mandatory Mechanical Test Code",
+      mandatory_status: "Mandatory in Smart City and public junction equipment tenders",
+      source_order: "Smart Cities Mission Technical Baseline",
+      verification_note: "Test certificate from accredited physical testing laboratory."
+    },
+    source_document: "Bureau of Indian Standards — Electrotechnical Division (ETD 07)",
+    source_location: "ETD 07 / IS/IEC 62262:2002 Specification Document"
+  },
+
+  // --------------------------------------------------------------------------
+  // 5. FIRE SAFETY, HEALTHCARE & LIFE PROTECTION
+  // --------------------------------------------------------------------------
+  {
+    standard_id: "IS-2190-2010",
+    standard_number: "IS 2190 : 2010",
+    title: "Selection, Installation and Maintenance of First-Aid Fire Extinguishers — Code of Practice (Fourth Revision)",
+    scope: "Covers the selection, location, installation, maintenance, and testing of portable first-aid fire extinguishers in commercial buildings, factories, substations, and public complexes.",
+    status: "Current",
+    publication_date: "2010-08-15",
+    current_version: "Fourth Revision (Reaffirmed 2020)",
+    division: "CED (Civil Engineering Division)",
+    committee: "CED 22 — Fire Fighting Operations",
+    amendments: [
+      { number: "Amendment No. 1", date: "2016-04", summary: "Inclusion of clean agent (halocarbon replacement) portable fire extinguishers." }
+    ],
+    supersedes: "IS 2190 : 1992",
+    superseded_by: null,
+    product_categories: ["Fire & Life Safety", "Building Installations", "Safety Equipment"],
+    technical_domains: ["Fire Safety Engineering", "Public Safety", "Building Architecture"],
+    keywords: ["fire extinguisher", "ABC powder", "CO2 extinguisher", "fire hazard", "substation fire", "hydraulic test", "maintenance schedule"],
+    applicable_products: [
+      "Substation Fire Safety Installations",
+      "Server Room Clean Agent Extinguishers",
+      "Public Building Dry Powder ABC Extinguishers",
+      "Industrial Plant Portable Extinguishers"
+    ],
+    test_methods: [
+      { clause: "Clause 11.2", title: "Hydraulic Pressure Proof Test", description: "Cylinders hydro-tested at prescribed pressure (up to 3.0 MPa for ABC powder) every 3 or 5 years." },
+      { clause: "Clause 11.4", title: "Discharge Performance Test", description: "Verification of minimum 85% discharge within specified duration (15 to 30 seconds)." }
+    ],
+    safety_information: {
+      clause: "Clause 4.1",
+      title: "Classification of Fires (Class A, B, C, D and F)",
+      description: "Water type prohibited on live electrical fires; ABC dry chemical powder or CO2 mandatory near electrical panels."
+    },
+    installation_information: {
+      clause: "Clause 6",
+      title: "Mounting Height and Travel Distance",
+      reference: "Mounted with top handle not more than 1.5 m from floor; travel distance not exceeding 15 m in high-hazard areas."
+    },
+    terminology_information: "Class A (solid carbonaceous), Class B (flammable liquids), Class C (gases/electrical) defined in Clause 3.",
+    normative_references: [
+      { standard_number: "IS 15683 : 2018", title: "Portable fire extinguishers — Performance and construction", relationship_type: "Equipment Manufacturing Code" }
+    ],
+    allied_standards: [
+      { standard_number: "IS 732 : 2019", title: "Electrical wiring code", relationship_type: "Substation Protection" }
+    ],
+    related_standards: [],
+    certification_information: {
+      scheme: "Statutory Fire Safety Code under National Building Code (Part 4)",
+      mandatory_status: "Mandatory for obtaining Fire Safety NOC from State Fire Services",
+      source_order: "State Fire Prevention and Life Safety Measures Act",
+      verification_note: "Annual maintenance record stamped with testing date required."
+    },
+    source_document: "Bureau of Indian Standards — Civil Engineering Division (CED 22)",
+    source_location: "CED 22 / IS 2190:2010 Code of Practice Document"
+  },
+  {
+    standard_id: "IS-2925-1984",
+    standard_number: "IS 2925 : 1984",
+    title: "Specification for Industrial Safety Helmets (Second Revision, Reaffirmed 2020)",
+    scope: "Covers requirements for construction, materials, shock absorption, penetration resistance, flammability, and electrical insulation for industrial safety helmets.",
+    status: "Current",
+    publication_date: "1984-11-20",
+    current_version: "Second Revision (Reaffirmed 2020, with Amendments 1, 2 & 3)",
+    division: "CHD (Chemical Division)",
+    committee: "CHD 08 — Occupational Safety and Health",
+    amendments: [
+      { number: "Amendment No. 3", date: "2018-02", summary: "Enhanced dielectric test for electrical safety class helmets (up to 20,000 V)." }
+    ],
+    supersedes: "IS 2925 : 1975",
+    superseded_by: null,
+    product_categories: ["Personal Protective Equipment", "Occupational Safety", "Safety Helmets"],
+    technical_domains: ["Occupational Health & Safety", "Polymer Engineering"],
+    keywords: ["safety helmet", "hard hat", "shock absorption", "penetration resistance", "dielectric test", "construction safety", "PPE"],
+    applicable_products: [
+      "Construction Hard Hats",
+      "Electrical Lineman Safety Helmets",
+      "Mining Safety Helmets",
+      "Industrial Plant Head Protection"
+    ],
+    test_methods: [
+      { clause: "Clause 7.1", title: "Shock Absorption Test", description: "5.0 kg steel striker dropped from 1.0 m; force transmitted to headform shall not exceed 5.0 kN." },
+      { clause: "Clause 7.2", title: "Penetration Resistance Test", description: "3.0 kg conical plumb bob dropped from 1.0 m; point must not make electrical contact with headform." },
+      { clause: "Clause 7.4", title: "Electrical Insulation (Dielectric Proof)", description: "Shell subjected to 2000 V AC for 1 minute; leakage current < 9.0 mA." }
+    ],
+    safety_information: {
+      clause: "Clause 5.1",
+      title: "Non-Toxicity of Harness Materials",
+      description: "Headband and sweatband materials must be dermatologically safe and free from toxic skin irritants."
+    },
+    installation_information: {
+      clause: "Clause 9",
+      title: "Marking and Shelf Life",
+      reference: "Permanent embossing of manufacture quarter and year, manufacturer name, and ISI mark."
+    },
+    terminology_information: "Harness, cradle, nape strap, and chin strap definitions per Clause 3.",
+    normative_references: [],
+    allied_standards: [
+      { standard_number: "IS 15298 (Part 2) : 2016", title: "Safety footwear", relationship_type: "Allied PPE" }
+    ],
+    related_standards: [],
+    certification_information: {
+      scheme: "BIS Product Certification Scheme (Scheme-I, ISI Mark)",
+      mandatory_status: "Mandatory under Personal Protective Equipment (Quality Control) Order",
+      source_order: "DPIIT QCO (Safety Helmets)",
+      verification_note: "Helmets without genuine embossed ISI mark are illegal for public works contracts."
+    },
+    source_document: "Bureau of Indian Standards — Chemical Division (CHD 08)",
+    source_location: "CHD 08 / IS 2925:1984 Specification Document"
+  }
+];
+
+/**
+ * Fast lookup map by ID and normalized Standard Number
+ */
+export const STANDARDS_MAP = STANDARDS_DATABASE.reduce((acc, std) => {
+  acc[std.standard_id] = std;
+  acc[std.standard_number.toLowerCase()] = std;
+  return acc;
+}, {});
